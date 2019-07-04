@@ -22,7 +22,7 @@ class Feed extends Component {
     }
 
     registerToSocket = () => {
-        const socket = io('http://localhost:3333');
+        const socket = io(process.env.REACT_APP_API_URL);
 
         // post, like
 
